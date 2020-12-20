@@ -17,6 +17,8 @@ $ yarn add name-on-copy
 
 ```
 import nameOnCopy from 'name-on-copy'
+// or
+const nameOnCopy = require("name-on-copy")
 
 nameOnCopy('hello', ['hello'])
 // hellocopy
