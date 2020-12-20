@@ -1,6 +1,6 @@
 (function (root, factory) {
   if (typeof define === "function" && define.amd) {
-    define("nameOnCopy", [], factory());
+    define("nameOnCopy", [], factory);
   } else if (typeof module === "object" && module.exports) {
     module.exports = factory();
   } else {
@@ -25,9 +25,9 @@
   }
 
   function generate(
-    source,
-    names,
-    options = { suffix: "Copy", useSpaces: false }
+    source = "",
+    names = [],
+    options = { suffix: "copy", useSpaces: false }
   ) {
     let name = source + (options.useSpaces ? " " : "") + options.suffix;
     while (!isUnique(name, names)) {
