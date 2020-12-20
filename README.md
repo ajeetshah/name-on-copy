@@ -9,6 +9,21 @@ $ npm i name-on-copy
 
 # or
 
-yarn add name-on-copy
+$ yarn add name-on-copy
 
+```
+
+## Usage
+
+```
+import nameOnCopy from 'name-on-copy'
+
+nameOnCopy('hello', ['hello'])
+// hellocopy
+
+nameOnCopy('hello', ['hello', 'hellocopy'])
+// hellocopy2
+
+nameOnCopy('world', ['hello', 'hellocopy', 'world'])
+// worldcopy
 ```
