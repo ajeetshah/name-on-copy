@@ -1,0 +1,22 @@
+{
+  "name": "name-on-copy",
+  "version": "1.0.0",
+  "description": "Generate new names on copy",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ajeetshah/name-on-copy.git"
+  },
+  "keywords": [
+    "name",
+    "name copy",
+    "name on copy",
+    "generare name on copy",
+    "auto generate name on copy"
+  ],
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/ajeetshah/name-on-copy/issues"
+  },
+  "homepage": "https://github.com/ajeetshah/name-on-copy#readme"
+}
