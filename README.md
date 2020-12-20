@@ -27,3 +27,5 @@ nameOnCopy('hello', ['hello', 'hellocopy'])
 nameOnCopy('world', ['hello', 'hellocopy', 'world'])
 // worldcopy
 ```
+
+## [MIT](https://github.com/ajeetshah/name-on-copy/blob/main/LICENSE)

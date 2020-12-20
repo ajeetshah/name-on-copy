@@ -1,6 +1,6 @@
 {
   "name": "name-on-copy",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Generate new names on copy",
   "main": "index.js",
   "repository": {
