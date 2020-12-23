@@ -2,7 +2,7 @@
   "name": "name-on-copy",
   "version": "1.0.4",
   "description": "Generate new names on copy",
-  "main": "index.js",
+  "main": "src/index.js",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/ajeetshah/name-on-copy.git"
