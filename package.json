@@ -2,7 +2,13 @@
   "name": "name-on-copy",
   "version": "1.0.4",
   "description": "Generate new names on copy",
-  "main": "src/index.js",
+  "module": "src/index.js",
+  "scripts": {
+    "prebuild": "rimraf dist",
+    "build": "webpack --config webpack/webpack.config.prod.js",
+    "predev": "rimraf dist",
+    "dev": "webpack --config webpack/webpack.config.dev.js"
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/ajeetshah/name-on-copy.git"
@@ -20,6 +26,7 @@
   },
   "homepage": "https://github.com/ajeetshah/name-on-copy#readme",
   "devDependencies": {
+    "rimraf": "^3.0.2",
     "webpack": "^5.11.0",
     "webpack-cli": "^4.2.0"
   }

@@ -15,7 +15,7 @@ function increment(name) {
   return name + 2
 }
 
-function generate(
+export default function nameOnCopy(
   source = '',
   names = [],
   options = { suffix: 'copy', useSpaces: false }
