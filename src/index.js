@@ -1,13 +1,3 @@
-// ;(function (root, factory) {
-//   if (typeof define === 'function' && define.amd) {
-//     define('nameOnCopy', [], factory)
-//   } else if (typeof module === 'object' && module.exports) {
-//     module.exports = factory()
-//   } else {
-//     root.nameOnCopy = factory()
-//   }
-// })(typeof self !== 'undefined' ? self : this, function () {
-
 function isNumber(value) {
   return !isNaN(+value)
 }
@@ -36,6 +26,3 @@ function generate(
   }
   return name
 }
-
-//   return generate
-// })
