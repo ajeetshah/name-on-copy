@@ -2,6 +2,7 @@ const path = require('path')
 
 module.exports = {
   entry: './src/index.ts',
+  mode: 'production',
   devtool: 'inline-source-map',
   module: {
     rules: [
@@ -20,5 +21,9 @@ module.exports = {
     filename: 'name-on-copy.js',
     library: 'nameOnCopy',
     libraryTarget: 'umd',
+  },
+  optimization: {
+    minimize: false,
+    usedExports: true,
   },
 }

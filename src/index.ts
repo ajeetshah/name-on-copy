@@ -16,8 +16,8 @@ function increment(name: string) {
 }
 
 interface IOptions {
-  suffix: string
-  useSpaces: boolean
+  suffix?: string
+  useSpaces?: boolean
 }
 
 export default function nameOnCopy(
