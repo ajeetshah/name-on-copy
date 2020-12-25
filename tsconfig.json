@@ -6,7 +6,7 @@
     "outDir": "",
     "sourceMap": true,
     "noImplicitAny": true,
-    "module": "commonjs",
+    "module": "UMD",
     "target": "es5",
     "jsx": "react",
     "allowJs": true,
