@@ -3,7 +3,7 @@
     "src/**/*"
   ],
   "compilerOptions": {
-    "outDir": "dist",
+    "outDir": "",
     "sourceMap": true,
     "noImplicitAny": true,
     "module": "commonjs",

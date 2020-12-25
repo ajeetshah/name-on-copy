@@ -17,8 +17,8 @@ module.exports = {
     extensions: ['.tsx', '.ts', '.js'],
   },
   output: {
-    path: path.resolve(__dirname, 'dist'),
-    filename: 'name-on-copy.js',
+    path: path.resolve(__dirname, ''),
+    filename: 'index.js',
     library: 'nameOnCopy',
     libraryTarget: 'umd',
   },
