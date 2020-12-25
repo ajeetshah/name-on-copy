@@ -18,7 +18,7 @@ module.exports = {
   },
   output: {
     path: path.resolve(__dirname, ''),
-    filename: 'name-on-copy.js',
+    filename: 'index.js',
     library: 'nameOnCopy',
     libraryTarget: 'umd',
     globalObject: 'this',
