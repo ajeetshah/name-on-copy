@@ -1,12 +1,12 @@
-function isNumber(value) {
+function isNumber(value: string) {
   return !isNaN(+value)
 }
 
-function isUnique(name, names) {
+function isUnique(name: string, names: string[]) {
   return names.indexOf(name) === -1
 }
 
-function increment(name) {
+function increment(name: string) {
   const lastChar = name.slice(-1)
   if (isNumber(lastChar)) {
     const nameWithoutLastIndex = name.slice(0, name.length - 1)
@@ -15,10 +15,15 @@ function increment(name) {
   return name + 2
 }
 
+interface IOptions {
+  suffix: string
+  useSpaces: boolean
+}
+
 export default function nameOnCopy(
-  source = '',
-  names = [],
-  options = { suffix: 'copy', useSpaces: false }
+  source: string = '',
+  names: string[] = [],
+  options: IOptions = { suffix: 'copy', useSpaces: false }
 ) {
   let name = source + (options.useSpaces ? ' ' : '') + options.suffix
   while (!isUnique(name, names)) {
