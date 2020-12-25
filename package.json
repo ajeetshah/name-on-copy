@@ -1,6 +1,6 @@
 {
   "name": "name-on-copy",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "description": "Generate new names on copy",
   "module": "src/index.ts",
   "scripts": {
