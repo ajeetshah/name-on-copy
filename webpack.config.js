@@ -21,6 +21,7 @@ module.exports = {
     filename: 'index.js',
     library: 'nameOnCopy',
     libraryTarget: 'umd',
+    globalObject: 'this',
   },
   optimization: {
     minimize: false,
