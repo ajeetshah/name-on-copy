@@ -1,8 +1,8 @@
 {
   "name": "name-on-copy",
-  "version": "1.0.8",
+  "version": "1.0.9",
   "description": "Generate new names on copy",
-  "module": "src/index.ts",
+  "module": "name-on-copy.js",
   "scripts": {
     "prebuild": "rimraf dist",
     "build": "webpack --config webpack.config.js"

@@ -8,7 +8,6 @@
     "noImplicitAny": true,
     "module": "UMD",
     "target": "es5",
-    "jsx": "react",
     "allowJs": true,
     "declaration": true
   }
