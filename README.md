@@ -40,11 +40,12 @@ nameOnCopy(source, names [, options])
 
 ### Arguments
 
-| Argument            | Description                                                                                             | Type       | Required?    | Default value |
-| ------------------- | ------------------------------------------------------------------------------------------------------- | ---------- | ------------ | ------------- |
-| `source`            | Name of source i.e. item name being copied                                                              | `string`   | **required** | `''`          |
-| `names`             | Array of names existing currently                                                                       | `string[]` | **required** | `[]`          |
-| `options.suffix`    | The suffix to be used in the name being generated                                                       | `string`   | optional     | `'copy'`      |
-| `options.useSpaces` | When `true`, a space will be added between `source` and `suffix`. When `false`, no space will be added. | `boolean`  | optional     | `false`       |
+| Argument             | Description                                                                                                                                         | Type       | Required?    | Default value |
+| -------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------- | ---------- | ------------ | ------------- |
+| `source`             | Name of source i.e. item name being copied                                                                                                          | `string`   | **required** | `''`          |
+| `names`              | Array of names existing currently                                                                                                                   | `string[]` | **required** | `[]`          |
+| `options.suffix`     | The suffix to be used in the name being generated                                                                                                   | `string`   | optional     | `'copy'`      |
+| `options.useSpaces`  | When `true`, a space will be added between `source` and `suffix`. When `false`, no space will be added.                                             | `boolean`  | optional     | `false`       |
+| `options.isFileName` | When `true`, `source` will be treated as a **filename** and file extension will be preserved in generated name. E.g. `hello.txt` -> `hellocopy.txt` | `boolean`  | optional     | `false`       |
 
 ## [MIT](https://github.com/ajeetshah/name-on-copy/blob/main/LICENSE)
