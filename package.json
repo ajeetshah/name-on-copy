@@ -1,12 +1,12 @@
 {
   "name": "name-on-copy",
-  "version": "1.1.1",
+  "version": "1.1.2",
   "description": "Generate new names on copy",
   "main": "index.js",
   "module": "index.js",
   "typings": "index.d.ts",
   "scripts": {
-    "prebuild": "rimraf dist",
+    "prebuild": "rimraf index.js index.d.ts",
     "build": "webpack --config webpack.config.js"
   },
   "repository": {

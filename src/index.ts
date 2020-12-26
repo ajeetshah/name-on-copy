@@ -23,9 +23,10 @@ interface IOptions {
 export default function nameOnCopy(
   source: string = '',
   names: string[] = [],
-  options: IOptions = { suffix: 'copy', useSpaces: false }
+  options: IOptions = {}
 ) {
-  let name = source + (options.useSpaces ? ' ' : '') + options.suffix
+  const { suffix = 'copy', useSpaces = false } = options
+  let name = source + (useSpaces ? ' ' : '') + suffix
   while (!isUnique(name, names)) {
     name = increment(name)
   }

@@ -6,7 +6,7 @@
     "outDir": "",
     "sourceMap": true,
     "noImplicitAny": true,
-    "module": "UMD",
+    "module": "commonjs",
     "target": "es5",
     "allowJs": true,
     "declaration": true
