@@ -35,3 +35,59 @@ test('hellocopy2 first', () => {
     nameOnCopy('hellocopy2', ['hello', 'hellocopy', 'hellocopy2', 'hellocopy3'])
   ).toBe('hellocopy2copy')
 })
+
+test('a.txt first', () => {
+  expect(nameOnCopy('a.txt', ['a.txt'], { isFileName: true })).toBe('acopy.txt')
+})
+
+test('a.txt second', () => {
+  expect(nameOnCopy('a.txt', ['a.txt', 'acopy.txt'], { isFileName: true })).toBe(
+    'acopy2.txt'
+  )
+})
+
+test('acopy.txt first', () => {
+  expect(nameOnCopy('acopy.txt', ['acopy.txt'], { isFileName: true })).toBe(
+    'acopycopy.txt'
+  )
+})
+
+test('acopy.txt second', () => {
+  expect(
+    nameOnCopy('acopy.txt', ['acopy.txt', 'acopycopy.txt'], { isFileName: true })
+  ).toBe('acopycopy2.txt')
+})
+
+test('a.pdf first', () => {
+  expect(
+    nameOnCopy('a.pdf', ['a.txt', 'a.pdf', 'acopy.txt'], { isFileName: true })
+  ).toBe('acopy.pdf')
+})
+
+test('a.pdf second', () => {
+  expect(
+    nameOnCopy('a.pdf', ['a.txt', 'a.pdf', 'acopy.txt', 'acopy.pdf'], {
+      isFileName: true,
+    })
+  ).toBe('acopy2.pdf')
+})
+
+test('acopy.pdf second', () => {
+  expect(
+    nameOnCopy(
+      'acopy.pdf',
+      [
+        'a.txt',
+        'a.pdf',
+        'acopy.txt',
+        'acopy.pdf',
+        'acopycopy',
+        'acopycopy.txt',
+        'acopycopy.pdf',
+      ],
+      {
+        isFileName: true,
+      }
+    )
+  ).toBe('acopycopy2.pdf')
+})
