@@ -6,7 +6,9 @@
   "module": "index.js",
   "typings": "index.d.ts",
   "scripts": {
-    "prebuild": "rimraf index.js index.d.ts",
+    "clean": "rimraf index.js index.d.ts",
+    "test": "jest",
+    "prebuild": "npm run clean",
     "build": "webpack --config webpack.config.js"
   },
   "repository": {
@@ -26,8 +28,10 @@
   },
   "homepage": "https://github.com/ajeetshah/name-on-copy#readme",
   "devDependencies": {
+    "jest": "^26.6.3",
     "rimraf": "^3.0.2",
     "ts-loader": "^8.0.12",
+    "ts-node": "^9.1.1",
     "typescript": "^4.1.3",
     "webpack": "^5.11.0",
     "webpack-cli": "^4.2.0"
