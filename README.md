@@ -52,6 +52,3 @@ nameOnCopy(source, names [, options])
 | `options.isFileName` | When `true`, `source` will be treated as a **filename** and file extension will be preserved in generated name. E.g. `hello.txt` -> `hellocopy.txt` | `boolean`  | optional     | `false`       |
 
 ## [MIT](https://github.com/ajeetshah/name-on-copy/blob/main/LICENSE)
-
-
-[![FOSSA Status](https://app.fossa.com/api/projects/git%2Bgithub.com%2Fajeetshah%2Fname-on-copy.svg?type=large)](https://app.fossa.com/projects/git%2Bgithub.com%2Fajeetshah%2Fname-on-copy?ref=badge_large)
