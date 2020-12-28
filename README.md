@@ -1,5 +1,7 @@
 # name-on-copy
 
+[![Codacy Badge](https://api.codacy.com/project/badge/Grade/fbe805c5752741e9a924a3d759bd84ba)](https://app.codacy.com/gh/ajeetshah/name-on-copy?utm_source=github.com&utm_medium=referral&utm_content=ajeetshah/name-on-copy&utm_campaign=Badge_Grade_Settings)
+
 Generate new names on copy.
 
 ## Installation
