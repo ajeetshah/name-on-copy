@@ -7,6 +7,7 @@
   "typings": "index.d.ts",
   "scripts": {
     "clean": "rimraf index.js index.d.ts",
+    "clean-deps": "rimraf node_modules/ yarn.lock",
     "test": "jest",
     "prebuild": "npm run clean",
     "build": "webpack --config webpack.config.js"
