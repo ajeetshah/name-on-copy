@@ -56,3 +56,13 @@ nameOnCopy(source, names [, options])
 Freely distributed under the terms of the [MIT license](https://github.com/ajeetshah/name-on-copy/blob/main/LICENSE)
 
 [![FOSSA Status](https://app.fossa.com/api/projects/git%2Bgithub.com%2Fajeetshah%2Fname-on-copy.svg?type=large)](https://app.fossa.com/projects/git%2Bgithub.com%2Fajeetshah%2Fname-on-copy?ref=badge_large)
+
+---
+
+## Development
+
+Packages:
+
+- [name-on-copy](./packages/name-on-copy)
+- [try-with-ts](./packages/try-with-ts)
+- [try-with-js](./packages/try-with-js)
