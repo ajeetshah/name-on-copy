@@ -1,7 +1,7 @@
 # name-on-copy
 
 [![Codacy Badge](https://api.codacy.com/project/badge/Grade/fbe805c5752741e9a924a3d759bd84ba)](https://app.codacy.com/gh/ajeetshah/name-on-copy?utm_source=github.com&utm_medium=referral&utm_content=ajeetshah/name-on-copy&utm_campaign=Badge_Grade_Settings) [![MIT License](https://img.shields.io/apm/l/atomic-design-ui.svg)](https://github.com/ajeetshah/name-on-copy/blob/main/LICENSE) [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](https://github.com/ajeetshah/name-on-copy)
-[![FOSSA Status](https://app.fossa.com/api/projects/git%2Bgithub.com%2Fajeetshah%2Fname-on-copy.svg?type=shield)](https://app.fossa.com/projects/git%2Bgithub.com%2Fajeetshah%2Fname-on-copy?ref=badge_shield)
+[![FOSSA Status](https://app.fossa.com/api/projects/git%2Bgithub.com%2Fajeetshah%2Fname-on-copy.svg?type=shield)](https://app.fossa.com/projects/git%2Bgithub.com%2Fajeetshah%2Fname-on-copy?ref=badge_shield) [![lerna](https://img.shields.io/badge/maintained%20with-lerna-cc00ff.svg)](https://lerna.js.org/)
 
 Generate new names on copy.
 
