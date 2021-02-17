@@ -3,8 +3,8 @@
   "private": true,
   "scripts": {
     "clean": "npx lerna clean",
-    "bootstrap": "npx lerna bootstrap",
-    "lerna-link": "npx lerna link"
+    "bs": "npx lerna bootstrap",
+    "llink": "npx lerna link"
   },
   "devDependencies": {
     "lerna": "^3.22.1"
