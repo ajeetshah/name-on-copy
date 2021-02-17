@@ -1,6 +1,6 @@
 {
   "name": "name-on-copy",
-  "version": "1.2.4",
+  "version": "1.2.5",
   "description": "Generate new names on copy",
   "main": "index.js",
   "module": "index.js",
@@ -38,6 +38,7 @@
     "webpack-cli": "^4.2.0"
   },
   "files": [
-    "index.d.ts"
+    "index.d.ts",
+    "utils.d.ts"
   ]
 }
