@@ -1,10 +1,10 @@
 const nameOnCopy = require('../index').default
 
-test('undefined', () => {
+test('should work with undefined', () => {
   expect(nameOnCopy()).toBe('copy')
 })
 
-test('blank', () => {
+test('should work with blank', () => {
   expect(nameOnCopy('', [])).toBe('copy')
 })
 
