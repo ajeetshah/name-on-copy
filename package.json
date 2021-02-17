@@ -6,7 +6,5 @@
     "bs": "npx lerna bootstrap",
     "llink": "npx lerna link"
   },
-  "devDependencies": {
-    "lerna": "^3.22.1"
-  }
+  "devDependencies": {}
 }
