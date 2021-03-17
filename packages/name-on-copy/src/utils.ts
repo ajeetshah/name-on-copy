@@ -22,10 +22,10 @@ export function getFileNameAndExtension(value: string) {
 }
 
 export function increment(value: string) {
-  const lastChar = value.slice(-1)
-  if (isNumber(lastChar)) {
-    const nameWithoutLastIndex = value.slice(0, value.length - 1)
-    return nameWithoutLastIndex + (+lastChar + 1)
+  const matched = value.match(/\d+$/)
+  if (matched) {
+    const nextNumber = Number(matched[0]) + 1
+    return value.slice(0, matched.index) + nextNumber
   }
   return value + 2
 }

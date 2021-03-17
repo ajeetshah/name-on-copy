@@ -91,3 +91,38 @@ test('acopy.pdf second', () => {
     )
   ).toBe('acopycopy2.pdf')
 })
+
+test('should be hellocopy11', () => {
+  const data = [2, 3, 4, 5, 6, 7, 8, 9, 10].map((n) => 'hellocopy' + n)
+  expect(nameOnCopy('hello', ['hellocopy', ...data])).toBe('hellocopy11')
+})
+
+test('should be hellocopy19', () => {
+  const data = [2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18].map(
+    (n) => 'hellocopy' + n
+  )
+  expect(nameOnCopy('hello', ['hellocopy', ...data])).toBe('hellocopy19')
+})
+
+test('should be hellocopy20', () => {
+  const data = [2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19].map(
+    (n) => 'hellocopy' + n
+  )
+  expect(nameOnCopy('hello', ['hellocopy', ...data])).toBe('hellocopy20')
+})
+
+test('should be hellocopy50', () => {
+  const data = []
+  for (let i = 2; i < 50; i++) {
+    data.push('hellocopy' + i)
+  }
+  expect(nameOnCopy('hello', ['hello', 'hellocopy', ...data])).toBe('hellocopy50')
+})
+
+test('should be hellocopy199', () => {
+  const data = []
+  for (let i = 2; i < 199; i++) {
+    data.push('hellocopy' + i)
+  }
+  expect(nameOnCopy('hello', ['hello', 'hellocopy', ...data])).toBe('hellocopy199')
+})
