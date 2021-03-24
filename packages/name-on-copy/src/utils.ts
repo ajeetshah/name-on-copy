@@ -16,13 +16,14 @@ export function getFileNameAndExtension(value: string) {
   }
 }
 
-export function increment(value: string) {
+export function increment(value: string, useSpaces: boolean) {
+  const space = useSpaces ? ' ' : ''
   const matched = value.match(/\d+$/)
   if (matched) {
     const nextNumber = Number(matched[0]) + 1
-    return value.slice(0, matched.index) + nextNumber
+    return value.slice(0, matched.index).trim() + space + nextNumber
   }
-  return value + 2
+  return value.trim() + space + 2
 }
 
 export function generateFirst(
@@ -42,7 +43,7 @@ export function generateFirst(
     name = source
   }
 
-  const pattern = new RegExp(`${space}${suffix}(\\d*)\?\$`)
+  const pattern = new RegExp(`${space}${suffix}(${space}\\d*)\?\$`)
   const matched = name.match(pattern)
   if (matched) {
     let number = 2
@@ -50,16 +51,21 @@ export function generateFirst(
       number = Number(matched[1]) + 1
     }
     return (
-      name.slice(0, name.indexOf(matched[0])) + space + suffix + number + extension
+      name.slice(0, name.indexOf(matched[0])).trim() +
+      space +
+      suffix +
+      space +
+      number +
+      extension
     )
   }
-  return name + space + suffix + extension
+  return name.trim() + space + suffix + extension
 }
 
-export function generateNext(name: string, isFileName: boolean) {
+export function generateNext(name: string, useSpaces: boolean, isFileName: boolean) {
   if (!isFileName) {
-    return increment(name)
+    return increment(name, useSpaces)
   }
   const { fileName, extension } = getFileNameAndExtension(name)
-  return increment(fileName) + extension
+  return increment(fileName, useSpaces) + extension
 }

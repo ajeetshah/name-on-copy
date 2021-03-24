@@ -23,7 +23,7 @@ export default function nameOnCopy(
   const { suffix, useSpaces, isFileName } = Object.assign(defaultOptions, options)
   let name = generateFirst(source, suffix, useSpaces, isFileName)
   while (!isUnique(name, names)) {
-    name = generateNext(name, isFileName)
+    name = generateNext(name, useSpaces, isFileName)
   }
   return name
 }

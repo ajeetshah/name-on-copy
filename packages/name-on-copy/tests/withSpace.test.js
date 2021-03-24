@@ -29,35 +29,35 @@ test('hello second', () => {
     nameOnCopy('hello', ['hello', 'hello copy'], {
       useSpaces: true,
     })
-  ).toBe('hello copy2')
+  ).toBe('hello copy 2')
 })
 
 test('hello third', () => {
   expect(
-    nameOnCopy('hello', ['hello', 'hello copy', 'hello copy2'], {
+    nameOnCopy('hello', ['hello', 'hello copy', 'hello copy 2'], {
       useSpaces: true,
     })
-  ).toBe('hello copy3')
+  ).toBe('hello copy 3')
 })
 
 test('hellocopy first', () => {
   expect(
-    nameOnCopy('hello copy', ['hello', 'hello copy', 'hello copy2'], {
+    nameOnCopy('hello copy', ['hello', 'hello copy', 'hello copy 2'], {
       useSpaces: true,
     })
-  ).toBe('hello copy3')
+  ).toBe('hello copy 3')
 })
 
 test('hellocopy2 first', () => {
   expect(
     nameOnCopy(
-      'hello copy2',
-      ['hello', 'hello copy', 'hello copy2', 'hello copy3'],
+      'hello copy 2',
+      ['hello', 'hello copy', 'hello copy 2', 'hello copy 3'],
       {
         useSpaces: true,
       }
     )
-  ).toBe('hello copy4')
+  ).toBe('hello copy 4')
 })
 
 test('a.txt first', () => {
@@ -72,13 +72,13 @@ test('a.txt second', () => {
       isFileName: true,
       useSpaces: true,
     })
-  ).toBe('a copy2.txt')
+  ).toBe('a copy 2.txt')
 })
 
 test('acopy.txt first', () => {
   expect(
     nameOnCopy('a copy.txt', ['a copy.txt'], { isFileName: true, useSpaces: true })
-  ).toBe('a copy2.txt')
+  ).toBe('a copy 2.txt')
 })
 
 test('acopy.txt second', () => {
@@ -87,7 +87,7 @@ test('acopy.txt second', () => {
       isFileName: true,
       useSpaces: true,
     })
-  ).toBe('a copy2.txt')
+  ).toBe('a copy 2.txt')
 })
 
 test('a.pdf first', () => {
@@ -105,7 +105,7 @@ test('a.pdf second', () => {
       isFileName: true,
       useSpaces: true,
     })
-  ).toBe('a copy2.pdf')
+  ).toBe('a copy 2.pdf')
 })
 
 test('acopy.pdf second', () => {
@@ -126,60 +126,60 @@ test('acopy.pdf second', () => {
         useSpaces: true,
       }
     )
-  ).toBe('a copy2.pdf')
+  ).toBe('a copy 2.pdf')
 })
 
 test('should be hellocopy11', () => {
-  const data = [2, 3, 4, 5, 6, 7, 8, 9, 10].map((n) => 'hello copy' + n)
+  const data = [2, 3, 4, 5, 6, 7, 8, 9, 10].map((n) => 'hello copy ' + n)
   expect(
     nameOnCopy('hello', ['hello copy', ...data], {
       useSpaces: true,
     })
-  ).toBe('hello copy11')
+  ).toBe('hello copy 11')
 })
 
 test('should be hellocopy19', () => {
   const data = [2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18].map(
-    (n) => 'hello copy' + n
+    (n) => 'hello copy ' + n
   )
   expect(
     nameOnCopy('hello', ['hello copy', ...data], {
       useSpaces: true,
     })
-  ).toBe('hello copy19')
+  ).toBe('hello copy 19')
 })
 
 test('should be hellocopy20', () => {
   const data = [2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19].map(
-    (n) => 'hello copy' + n
+    (n) => 'hello copy ' + n
   )
   expect(
     nameOnCopy('hello', ['hello copy', ...data], {
       useSpaces: true,
     })
-  ).toBe('hello copy20')
+  ).toBe('hello copy 20')
 })
 
 test('should be hellocopy50', () => {
   const data = []
   for (let i = 2; i < 50; i++) {
-    data.push('hello copy' + i)
+    data.push('hello copy ' + i)
   }
   expect(
     nameOnCopy('hello', ['hello', 'hello copy', ...data], {
       useSpaces: true,
     })
-  ).toBe('hello copy50')
+  ).toBe('hello copy 50')
 })
 
-test('should be hellocopy199', () => {
+test('should be hello copy 199', () => {
   const data = []
   for (let i = 2; i < 199; i++) {
-    data.push('hello copy' + i)
+    data.push('hello copy ' + i)
   }
   expect(
     nameOnCopy('hello', ['hello', 'hello copy', ...data], {
       useSpaces: true,
     })
-  ).toBe('hello copy199')
+  ).toBe('hello copy 199')
 })
