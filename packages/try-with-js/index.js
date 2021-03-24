@@ -1,8 +1,8 @@
-const nameOnCopy = require("name-on-copy").default;
+const nameOnCopy = require('name-on-copy').default
 
-console.log(nameOnCopy);
+console.log(nameOnCopy)
 console.log(
-  nameOnCopy("A", ["Acopy"], {
+  nameOnCopy('A', ['Acopy'], {
     useSpaces: true,
   })
-);
+)

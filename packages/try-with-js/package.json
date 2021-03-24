@@ -9,9 +9,7 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "name-on-copy": "^1.2.5"
+    "name-on-copy": "^2.0.0"
   },
-  "devDependencies": {
-    "rimraf": "^3.0.2"
-  }
+  "devDependencies": {}
 }

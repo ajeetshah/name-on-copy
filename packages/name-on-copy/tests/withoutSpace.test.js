@@ -22,18 +22,16 @@ test('hello third', () => {
   )
 })
 
-// TODO: change the algo
 test('hellocopy first', () => {
   expect(nameOnCopy('hellocopy', ['hello', 'hellocopy', 'hellocopy2'])).toBe(
-    'hellocopycopy'
+    'hellocopy3'
   )
 })
 
-// TODO: change the algo
 test('hellocopy2 first', () => {
   expect(
     nameOnCopy('hellocopy2', ['hello', 'hellocopy', 'hellocopy2', 'hellocopy3'])
-  ).toBe('hellocopy2copy')
+  ).toBe('hellocopy4')
 })
 
 test('a.txt first', () => {
@@ -48,14 +46,14 @@ test('a.txt second', () => {
 
 test('acopy.txt first', () => {
   expect(nameOnCopy('acopy.txt', ['acopy.txt'], { isFileName: true })).toBe(
-    'acopycopy.txt'
+    'acopy2.txt'
   )
 })
 
 test('acopy.txt second', () => {
   expect(
     nameOnCopy('acopy.txt', ['acopy.txt', 'acopycopy.txt'], { isFileName: true })
-  ).toBe('acopycopy2.txt')
+  ).toBe('acopy2.txt')
 })
 
 test('a.pdf first', () => {
@@ -89,7 +87,7 @@ test('acopy.pdf second', () => {
         isFileName: true,
       }
     )
-  ).toBe('acopycopy2.pdf')
+  ).toBe('acopy2.pdf')
 })
 
 test('should be hellocopy11', () => {

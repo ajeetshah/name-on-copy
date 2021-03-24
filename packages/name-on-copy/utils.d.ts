@@ -1,4 +1,3 @@
-export declare function isNumber(value: string): boolean;
 export declare function isUnique(value: string, values: string[]): boolean;
 export declare function getFileNameAndExtension(value: string): {
     fileName: string;

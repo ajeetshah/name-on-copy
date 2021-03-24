@@ -1,8 +1,3 @@
-// TODO write test for these
-export function isNumber(value: string) {
-  return !isNaN(+value)
-}
-
 export function isUnique(value: string, values: string[]) {
   return values.indexOf(value) === -1
 }
@@ -37,11 +32,28 @@ export function generateFirst(
   isFileName: boolean
 ) {
   const space = useSpaces ? ' ' : ''
-  if (!isFileName) {
-    return source + space + suffix
+  let name = ''
+  let extension = ''
+  if (isFileName) {
+    const res = getFileNameAndExtension(source)
+    name = res.fileName
+    extension = res.extension
+  } else {
+    name = source
   }
-  const { fileName, extension } = getFileNameAndExtension(source)
-  return fileName + space + suffix + extension
+
+  const pattern = new RegExp(`${space}${suffix}(\\d*)\?\$`)
+  const matched = name.match(pattern)
+  if (matched) {
+    let number = 2
+    if (matched[1]) {
+      number = Number(matched[1]) + 1
+    }
+    return (
+      name.slice(0, name.indexOf(matched[0])) + space + suffix + number + extension
+    )
+  }
+  return name + space + suffix + extension
 }
 
 export function generateNext(name: string, isFileName: boolean) {
