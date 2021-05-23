@@ -9,7 +9,7 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "name-on-copy": "^2.0.0"
+    "name-on-copy": "^3.0.1"
   },
   "devDependencies": {}
 }
